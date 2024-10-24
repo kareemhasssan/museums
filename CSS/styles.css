@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: -5px; /* المسافة بين النص والخط */
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+main {
+    padding: 20px;
+}
+
+#exhibition-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.exhibition-item {
+    margin: 10px;
+    text-align: center; /* جعل النص في المنتصف */
+    width: 300px; /* عرض ثابت لكل عنصر */
+}
+
+.item-content {
+    display: block; /* استخدام الفليكس لعرض الصورة والنص بجانب بعض */
+    align-items: center; /* محاذاة العناصر عمودياً في الوسط */
+}
+
+.item-image {
+      width: 250px;
+    height: auto; /* الحفاظ على نسبة الطول إلى العرض */
+    margin-bottom:20 px; /* مسافة بين الصورة والوصف */
+    border: 2px solid #ccc; /* حدود للصورة */
+    border-radius: 5px; /* زوايا مدورة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل للصورة */
+    padding: 5px; /* مساحة داخلية حول الصورة */
+    background-color: #f9f9f9; /* لون خلفية للصندوق */
+    transition: transform 0.3s ease; /* تأثير الانتقال */
+}
+
+.item-image:hover {
+    transform: scale(1.2); /* تكبير الصورة عند المرور بالماوس */
+}
+
+.item-description {
+    margin: 0; /* إزالة الهوامش الافتراضية */
+    font-size: 35px; /* حجم النص */
+    color: #333; /* لون النص */
+    line-height: 1.5; /* تباعد الأسطر */
+    text-align: center; /* لضبط النص من اليمين إلى اليسار */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

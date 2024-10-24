@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المعروضات</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
 </head>
 <body>
     <header>
@@ -12,35 +12,69 @@
         <nav>
             <ul>
                 <li><a href="index.html">الصفحة الرئيسية</a></li>
+
+                <!-- أضف المزيد من الروابط حسب الحاجة -->
+            </ul>
+            <ul>
+                <li><a href="#item1">التمثال الفرعوني</a></li>
+                <li><a href="#item2">قناع توت عنخ آمون</a></li>
+                <li><a href="#item3">التمثال الفرعوني</a></li>
+                <li><a href="#item4">قناع توت عنخ آمون</a></li>
+
             </ul>
         </nav>
     </header>
     <main>
         <section id="exhibition-items">
-            <div class="exhibition-item">
+            <div class="exhibition-item" id="item1">
                 <img src="/images/T3.jpg" alt="قطعة أثرية 1" class="item-image">
-                <img src="barcode1.png" alt="بار كود 1" class="barcode">
+                <p class="item-description">
+                    <strong>اسم القطعة:</strong> تمثال فرعوني<br>
+                    <strong>العصر:</strong> الدولة القديمة<br>
+                    <strong>المادة:</strong> حجر جيري<br>
+                    <strong>الوصف:</strong> هذا التمثال يمثل أحد الملوك الفرعونيين وهو مصنوع بدقة متناهية.
+                </p>
             </div>
-            <div class="exhibition-item">
-                <img src="image2.jpg" alt="قطعة أثرية 2" class="item-image">
-                <img src="barcode2.png" alt="بار كود 2" class="barcode">
-            </div>
+
             <!-- أضف المزيد من القطع حسب الحاجة -->
         </section>
         <section id="exhibition-items">
-            <div class="exhibition-item">
-                <img src="/images/T3.jpg" alt="قطعة أثرية 1" class="item-image">
-                <img src="barcode1.png" alt="بار كود 1" class="barcode">
+            <div class="exhibition-item" id="item2">
+                <img src="/images/TA.png" alt="قطعة أثرية 2" class="item-image">
+                <p class="item-description">
+                    <strong>اسم القطعة:</strong> قناع توت عنخ آمون<br>
+                    <strong>العصر:</strong> الدولة الحديثة<br>
+                    <strong>المادة:</strong> ذهب<br>
+                    <strong>الوصف:</strong> يعتبر هذا القناع من أشهر القطع الأثرية في التاريخ المصري القديم.
+                </p>
             </div>
-            <div class="exhibition-item">
-                <img src="image2.jpg" alt="قطعة أثرية 2" class="item-image">
-                <img src="barcode2.png" alt="بار كود 2" class="barcode">
+        </section>
+        <section id="exhibition-items">
+            <div class="exhibition-item" id="item3">
+                <img src="/images/T3.jpg" alt="قطعة أثرية 2" class="item-image">
+                <p class="item-description">
+                    <strong>اسم القطعة:</strong> قناع توت عنخ آمون<br>
+                    <strong>العصر:</strong> الدولة الحديثة<br>
+                    <strong>المادة:</strong> ذهب<br>
+                    <strong>الوصف:</strong> يعتبر هذا القناع من أشهر القطع الأثرية في التاريخ المصري القديم.
+                </p>
             </div>
-            <!-- أضف المزيد من القطع حسب الحاجة -->
+        </section>
+        <section id="exhibition-items">
+            <div class="exhibition-item" id="item4">
+                <img src="/images/TA.png" alt="قطعة أثرية 2" class="item-image">
+                <p class="item-description">
+                    <strong>اسم القطعة:</strong> قناع توت عنخ آمون<br>
+                    <strong>العصر:</strong> الدولة الحديثة<br>
+                    <strong>المادة:</strong> ذهب<br>
+                    <strong>الوصف:</strong> يعتبر هذا القناع من أشهر القطع الأثرية في التاريخ المصري القديم.
+                </p>
+            </div>
         </section>
     </main>
     <footer>
-        <p>متحف الكليه. جميع الحقوق محفوظة.&copy; 2024 </p>
+        <p>&copy; 2024 متحفنا. جميع الحقوق محفوظة.</p>
     </footer>
+    <script src="/JS/script.js"></script>
 </body>
 </html>
