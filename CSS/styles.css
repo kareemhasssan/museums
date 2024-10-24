@@ -83,6 +83,7 @@ main {
 }
 
 .item-description {
+
     margin: 0; /* إزالة الهوامش الافتراضية */
     font-size: 35px; /* حجم النص */
     color: #333; /* لون النص */
