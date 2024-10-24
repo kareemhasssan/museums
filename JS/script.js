@@ -6,3 +6,11 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
 });
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        if (this.getAttribute('href') !== 'index.html') { // منع الانتقال الافتراضي إلى العناصر في نفس الصفحة
+            e.preventDefault();
+            window.location.href = this.getAttribute('href'); // الانتقال إلى الصفحة المحددة
+        }
+    });
+});
