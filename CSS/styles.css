@@ -85,7 +85,7 @@ main {
 .item-description {
 
     margin: 0; /* إزالة الهوامش الافتراضية */
-    font-size: 35px; /* حجم النص */
+    font-size: 40px; /* حجم النص */
     color: #333; /* لون النص */
     line-height: 1.5; /* تباعد الأسطر */
     text-align: center; /* لضبط النص من اليمين إلى اليسار */
